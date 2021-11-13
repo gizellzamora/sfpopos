@@ -12,8 +12,12 @@ function Title() {
         <div className="Title-Subtitle">San Francisco Privately Owned Public Open Spaces</div>
 
         <div>
-          <NavLink to="/">List</NavLink>
-          <NavLink to="/about">About</NavLink>
+        <NavLink
+          className={({ isActive }) => isActive ? "nav-link-active" : "nav-link" }
+          to="/">List</NavLink>
+        <NavLink
+          className={({ isActive }) => isActive ? "nav-link-active" : "nav-link" }
+          to="/about">About</NavLink>
         </div>
 
       </header>

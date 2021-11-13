@@ -8,6 +8,7 @@ function POPOSList() {
   const spaces = data.map(( { title, address, images, hours } ) => {
     return (
       <POPOSSpace
+        id={i}
         key={title}
         name={title}
         address={address}
